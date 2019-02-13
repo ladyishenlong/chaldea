@@ -14,4 +14,6 @@ public class HelloModel implements Serializable {
         this.name = name;
         this.treasure = treasure;
     }
+
+
 }

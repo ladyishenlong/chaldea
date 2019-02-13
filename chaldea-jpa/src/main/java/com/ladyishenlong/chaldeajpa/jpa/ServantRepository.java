@@ -8,7 +8,11 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface ServantRepository extends JpaRepository<ServantModel,Integer> {
+public interface ServantRepository extends JpaRepository<ServantModel, Integer> {
+
+
+    //jpa规则查询
+    ServantModel findFirstByAge(int age);
 
 
 

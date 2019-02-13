@@ -2,7 +2,9 @@ package com.ladyishenlong.chaldeagateway.controller;
 
 import com.ladyishenlong.chaldeagateway.model.HelloModel;
 import com.ladyishenlong.chaldeagateway.service.TestService;
+import com.ladyishenlong.chaldeagateway.utils.ResponseUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,8 +16,8 @@ public class HelloController {
     TestService testService;
 
     @GetMapping("/hello")
-    public HelloModel hello() {
-        return testService.hello();
+    public ResponseUtils<HelloModel> hello() {
+         return testService.hello();
     }
 
 

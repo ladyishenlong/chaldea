@@ -17,9 +17,13 @@ public class controller {
     @Autowired
     ServantRepository servantRepository;
 
+
     @GetMapping("/getAllServant")
     public List<ServantModel> getAllServant(){
        return servantRepository.findAll();
     }
+
+
+
 
 }
