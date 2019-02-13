@@ -13,6 +13,4 @@ public class HelloModel implements Serializable {
     private String name ;
     private String treasure ;
 
-
-
 }
