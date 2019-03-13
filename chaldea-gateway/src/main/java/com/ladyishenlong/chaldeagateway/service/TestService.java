@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Service
-@FeignClient(name = "chaldea-test")//远程项目的名称
+@FeignClient(name = "chaldea-test")//远程项目的名称spring.application.name
 public interface TestService {
 
     @GetMapping("/chaldea-test/hello")//远程项目controller的地址
