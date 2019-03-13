@@ -17,6 +17,8 @@ public class ChaldeaGatewayApplication {
 }
 
 /**
+ * springboot 学习项目
+ *
  * @Component    最普通的组件，可以被注入到spring容器进行管理
  * @Repository    作用于持久层
  * @Service    作用于业务逻辑层
