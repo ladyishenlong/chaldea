@@ -7,6 +7,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * 使用redis
+ * 测试使用本地redis 在test之中
+ * 以key-value形式储存数据
  */
 @EnableFeignClients
 @EnableEurekaClient
